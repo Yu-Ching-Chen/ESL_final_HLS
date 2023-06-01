@@ -1,0 +1,66 @@
+TOOL:	xrun(64)	22.03-s003: Started on May 27, 2023 at 15:23:33 CST
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Recompiling... reason: file './bdw_work/modules/PE/PIPELINE2/PE_rtl.v' is newer than expected.
+	expected: Sat May 27 14:55:11 2023
+	actual:   Sat May 27 15:23:22 2023
+file: bdw_work/sims/top_V_PIPELINE2.v
+			$value$plusargs("BDW_VLOG_DUMPFILE+%s",dump_file);
+			              |
+xmvlog: *W,NOSYST (bdw_work/sims/top_V_PIPELINE2.v,41|17): System function '$value$plusargs' invoked as a task. Return value will be ignored.
+file: bdw_work/wrappers/PE_cosim.v
+	module worklib.PE_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/PE/PIPELINE2/PE_rtl.v
+	module worklib.PE:v
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.top:v <0x31871a87>
+			streams: 117, words: 105052
+		worklib.PE:v <0x0bb9671d>
+			streams: 193, words: 70343
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:             231     231
+		Scalar wires:           41       -
+		Vectored wires:         48       -
+		Always blocks:         112     112
+		Initial blocks:          7       7
+		Cont. assignments:      61      78
+		Pseudo assignments:      8       8
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+
+        SystemC 2.3.3-Accellera --- Jun 11 2021 12:51:14
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+Read data start
+128
+Read data finished
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Simulation start
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Simulation stopped via $stop(1) at time 2645100 PS + 0
+./bdw_work/sims/top_V_PIPELINE2.v:72 		#100 $stop;
+xcelium> quit
+Average latency = 6 cycles
+Average throughput = 50 M sample/sec
+Simulation Finished
+TOOL:	xrun(64)	22.03-s003: Exiting on May 27, 2023 at 15:23:35 CST  (total: 00:00:02)

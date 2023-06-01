@@ -1,0 +1,25 @@
+TOOL:	xrun(64)	22.03-s003: Started on Jun 01, 2023 at 21:36:54 CST
+xrun(64): 22.03-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+Loading snapshot worklib.top:v .................... Done
+*** Registering Hub PLI1.0 Interface***
+xcelium> source /usr/cadtool/cadence/XCELIUM/XCELIUM_22.03.003/tools/xcelium/files/xmsimrc
+xcelium> 
+xcelium> run
+
+        SystemC 2.3.3-Accellera --- Jun 11 2021 12:51:14
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+Read data start
+128
+Read data finished
+NOTE: Cadence Design Systems Hub Simulation Platform : version 21.20-p100
+Simulation start
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Simulation stopped via $stop(1) at time 5195100 PS + 0
+./bdw_work/sims/top_V_PIPELINE4.v:72 		#100 $stop;
+xcelium> quit
+Average latency = 6 cycles
+Average throughput = 25 M sample/sec
+Simulation Finished
+TOOL:	xrun(64)	22.03-s003: Exiting on Jun 01, 2023 at 21:36:55 CST  (total: 00:00:01)
